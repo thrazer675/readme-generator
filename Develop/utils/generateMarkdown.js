@@ -1,7 +1,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  (https://img.shields.io/badge/license-${data.license}-blue.svg)
+  ${data.license}
 
   ## Description of project
   ${data.description}
@@ -23,7 +23,7 @@ function generateMarkdown(data) {
   ## Tests
   Run tests in the command line with: ${data.test}.
   ## Questions
-  You can ask me questions at ${data.email} or find me here on Github: github.com/${data.Github}
+  You can ask me questions at ${data.email} or find me here on Github: https://github.com/${data.Github}
 `;
 }
 
